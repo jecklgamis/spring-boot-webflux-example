@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-weblux-template
+  labels:
+    app: spring-boot-weblux-template
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 8080
+      name: http
+    - port: 443
+      protocol: TCP
+      targetPort: 8443
+      name: https
+  selector:
+    app: spring-boot-weblux-template
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-weblux-template
+spec:
+  selector:
+    matchLabels:
+      app: spring-boot-weblux-template
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: spring-boot-weblux-template
+    spec:
+      containers:
+        - name: spring-boot-weblux-template
+          image: __image_name__:__image_tag__
+          ports:
+            - containerPort: 8080
+            - containerPort: 8443
+
