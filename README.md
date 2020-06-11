@@ -1,6 +1,6 @@
 ## Spring Boot WebFlux Template
 
-[![Build Status](https://travis-ci.org/jecklgamis/spring-boot-webflux-template.svg?branch=master)](https://travis-ci.org/jecklgamis/spring-boot-webflux-template)
+[![Build Status](https://travis-ci.com/jecklgamis/spring-boot-webflux-template.svg?branch=master)](https://travis-ci.com/jecklgamis/spring-boot-webflux-template)
 
 This is an example Spring Boot WebFlux app using Java. 
 
