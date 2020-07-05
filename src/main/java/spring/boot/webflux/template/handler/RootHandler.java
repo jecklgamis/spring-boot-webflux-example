@@ -1,4 +1,4 @@
-package spring.boot.webflux.template;
+package spring.boot.webflux.template.handler;
 
 import com.google.common.collect.ImmutableMap;
 import org.springframework.beans.factory.annotation.Value;

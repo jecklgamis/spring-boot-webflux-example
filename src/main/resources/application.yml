@@ -1,6 +1,6 @@
 application:
   name: "spring-boot-webflux-template"
-  description: "An example Spring Boot app using Java"
+  description: "An example WebFlux app using Java"
 
 server:
   http:
@@ -8,13 +8,6 @@ server:
   compression:
     enabled: true
   port: 8080
-#  ssl:
-#    key-store: classpath:keystore.jks
-#    key-store-password: changeit
-
-logging:
-  file: logs/spring-boot-webflux-template.log
-
 
 management:
   endpoints:

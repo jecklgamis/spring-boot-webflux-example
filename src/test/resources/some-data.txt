@@ -1,0 +1,3 @@
+Don't repeat yourself
+Keep it simple, silly
+Fail fast

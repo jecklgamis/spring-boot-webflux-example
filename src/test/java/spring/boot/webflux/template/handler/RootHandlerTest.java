@@ -1,4 +1,4 @@
-package spring.boot.webflux.template;
+package spring.boot.webflux.template.handler;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,16 +10,12 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class RootRouterTest {
+public class RootHandlerTest {
     @Autowired
     private WebTestClient webTestClient;
 
     @Test
     public void testRoot() {
-        webTestClient
-                .get().uri("/")
-                .accept(MediaType.APPLICATION_JSON)
-                .exchange()
-                .expectStatus().isOk();
+        webTestClient.get().uri("/").accept(MediaType.APPLICATION_JSON).exchange().expectStatus().isOk();
     }
 }

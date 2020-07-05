@@ -1,4 +1,4 @@
-APP_NAME:=spring-boot-kotlin-example
+APP_NAME:=spring-boot-webflux-example
 default:
 	cat ./Makefile
 apply:
