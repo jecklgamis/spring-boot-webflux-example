@@ -1,6 +1,6 @@
 ## Spring Boot WebFlux Template
 
-[![Build Status](https://travis-ci.com/jecklgamis/spring-boot-webflux-template.svg?branch=master)](https://travis-ci.com/jecklgamis/spring-boot-webflux-template)
+[![Build](https://github.com/jecklgamis/spring-boot-weblux-template/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/spring-boot-weblux-template/actions/workflows/build.yml)
 
 This is an example [Spring Boot WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
 app using Java. Spring WebFlux uses [Reactor](https://projectreactor.io/) library, an implementation of Reactive Streams 
