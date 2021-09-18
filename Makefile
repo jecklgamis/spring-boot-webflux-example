@@ -1,5 +1,5 @@
 IMAGE_NAME:=jecklgamis/spring-boot-webflux-template
-IMAGE_TAG:=latest
+IMAGE_TAG:=$(shell git rev-parse HEAD)
 
 default:
 	cat ./Makefile
