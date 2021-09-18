@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: spring-boot-weblux-template
+  name: "{{ name }}"
   labels:
-    app: spring-boot-weblux-template
+    app: "{{ name }}"
 spec:
   type: NodePort
   ports:
@@ -16,27 +16,27 @@ spec:
       targetPort: 8443
       name: https
   selector:
-    app: spring-boot-weblux-template
+    app: "{{ name }}"
 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-weblux-template
+  name: "{{ name }}"
 spec:
   selector:
     matchLabels:
-      app: spring-boot-weblux-template
+      app: "{{ name }}"
   replicas: 2
   template:
     metadata:
       labels:
-        app: spring-boot-weblux-template
+        app: "{{ name }}"
     spec:
       containers:
-        - name: spring-boot-weblux-template
-          image: __image_name__:__image_tag__
+        - name: "{{ name }}"
+          image: "jecklgamis/{{ name }}:{{ version }}"
           ports:
             - containerPort: 8080
             - containerPort: 8443
