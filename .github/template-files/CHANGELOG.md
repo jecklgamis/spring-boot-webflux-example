@@ -4,4 +4,4 @@
 
 ### Added
 
-- Initial project from [spring-boot-webflux-template](https://github.com/jecklgamis/spring-boot-webflux-template)
+- Initial project from [spring-boot-webflux-example](https://github.com/jecklgamis/spring-boot-webflux-example)

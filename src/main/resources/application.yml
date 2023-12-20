@@ -1,5 +1,5 @@
 application:
-  name: "spring-boot-webflux-template"
+  name: "spring-boot-webflux-example"
   description: "An example Spring WebFlux app using Java"
 
 server:

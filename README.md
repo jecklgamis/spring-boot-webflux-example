@@ -1,6 +1,6 @@
-## Spring Boot WebFlux Template
+## Spring Boot WebFlux Example
 
-[![Build](https://github.com/jecklgamis/spring-boot-weblux-template/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/spring-boot-weblux-template/actions/workflows/build.yml)
+[![Build](https://github.com/jecklgamis/spring-boot-webflux-example/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/spring-boot-webflux-example/actions/workflows/build.yml)
 
 This is an example [Spring Boot WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
 app using Java. Spring WebFlux uses [Reactor](https://projectreactor.io/) library, an implementation of Reactive Streams 
@@ -13,10 +13,10 @@ This example:
 * Contains Multipart file upload handler example  (see `FileUploadHandler.java`)
 
 ## Running The App
-Ensure you have Java 8 or later.
+Ensure you have Java 21 or later.
 ```
 ./mvnw clean package
-java -jar target/spring-boot-webflux-template.jar
+java -jar target/spring-boot-webflux-example.jar
 ```
 
 ## Running The App Using Docker
