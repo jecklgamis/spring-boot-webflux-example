@@ -1,4 +1,4 @@
-IMAGE_NAME:=jecklgamis/spring-boot-webflux-template
+IMAGE_NAME:=jecklgamis/spring-boot-webflux-example
 IMAGE_TAG:=$(shell git rev-parse HEAD)
 
 default:
@@ -15,13 +15,4 @@ keystore:
 	@./generate-keystore.sh
 all: dist image
 up: all run
-push:
-	 docker push $(IMAGE_NAME):$(IMAGE_TAG)
-	 docker push $(IMAGE_NAME):latest
-tag:
-	 git tag -m "spring-boot-webflux-template-v$(IMAGE_TAG)" -a "v$(IMAGE_TAG)"
-	 git push --tags
-release-it: dist image push
-	cd deployment/k8s && ./create-k8s-files.py --version $(IMAGE_TAG)
-	kubectl apply -f deployment/k8s/deployment-$(IMAGE_TAG).yaml
 

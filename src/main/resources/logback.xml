@@ -7,7 +7,7 @@
     </appender>
 
     <appender name="file" class="ch.qos.logback.core.FileAppender">
-        <file>logs/spring-boot-webflux-template</file>
+        <file>logs/spring-boot-webflux-example</file>
         <append>true</append>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %c:%L - %msg%n</pattern>
