@@ -1,4 +1,4 @@
-IMAGE_NAME:=jecklgamis/spring-boot-webflux-example
+IMAGE_NAME:=spring-boot-webflux-example
 IMAGE_TAG:=$(shell git rev-parse HEAD)
 
 default:
