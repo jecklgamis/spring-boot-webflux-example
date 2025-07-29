@@ -1,5 +1,5 @@
 IMAGE_NAME:=spring-boot-webflux-example
-IMAGE_TAG:=$(shell git rev-parse HEAD)
+IMAGE_TAG:=$(shell git rev-parse --abbrev-ref HEAD)
 
 default:
 	cat ./Makefile
