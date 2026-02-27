@@ -11,7 +11,7 @@ jobs:
     if: github.event.repository.name != 'spring-boot-webflux-example'
     steps:
       - name: Fetch Sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Prepare
         shell: bash
