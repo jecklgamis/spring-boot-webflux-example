@@ -2,8 +2,8 @@
 
 [![Build](https://github.com/jecklgamis/spring-boot-webflux-example/actions/workflows/build.yaml/badge.svg)](https://github.com/jecklgamis/spring-boot-webflux-example/actions/workflows/build.yaml)
 
-This is an example [Spring Boot WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
-app using Java. Spring WebFlux uses [Reactor](https://projectreactor.io/) library, an implementation of Reactive Streams 
+This is an example [Spring Boot WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html)
+app using Java 25 and Spring Boot 3.5. Spring WebFlux uses [Reactor](https://projectreactor.io/) library, an implementation of Reactive Streams
 Specs for building non-blocking applications.
 
 This example:
