@@ -13,7 +13,7 @@ This example:
 * Contains Multipart file upload handler example  (see `FileUploadHandler.java`)
 
 ## Running The App
-Ensure you have Java 21 or later.
+Ensure you have Java 25 or later.
 ```
 ./mvnw clean package
 java -jar target/spring-boot-webflux-example.jar
