@@ -61,4 +61,4 @@ Server runs on port 8080 (HTTP) and 8443 (HTTPS). TLS uses `src/main/resources/k
 
 ## Package Structure
 
-All source is under `spring.boot.webflux.template` (Java 25, Spring Boot 3.5.x).
+All source is under `spring.boot.webflux.template` (Java 25, Spring Boot 4.1.x).

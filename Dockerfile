@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:26.04
 LABEL org.opencontainers.image.authors="jecklgamis@gmail.com"
 
 RUN apt update -y && apt install -y openjdk-25-jre-headless && rm -rf /var/lib/apt/lists/*
